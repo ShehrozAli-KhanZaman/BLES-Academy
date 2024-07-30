@@ -47,8 +47,8 @@ export const Footer = () => {
               &copy; {new Date().getFullYear()} BLES ACADEMY
             </p>
             <div className="col-md-4 text-center">
-              <Link to="/privacy-policy" className="text-light">
-                Privacy Policy
+              <Link to="/privacy-policy" className="text-light mx-2">
+                {"  "}Privacy Policy
               </Link>
             </div>
           </div>
