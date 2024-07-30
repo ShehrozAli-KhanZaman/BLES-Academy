@@ -1,0 +1,70 @@
+/* Home.css */
+
+.home-container {
+  padding: 20px; /* Padding around the container */
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0, 0.767);
+}
+
+.home-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Space between rows */
+  padding: 40px 40px; /* Horizontal padding on both sides */
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.home-row.text-right {
+  flex-direction: row; /* Image on left, text on right */
+  background-color:white;
+}
+
+.home-row.text-left {
+  flex-direction: row-reverse; /* Image on right, text on left */
+  background-color:white;
+}
+
+.home-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 300px; /* Max width for the image */
+  height: auto;
+}
+
+.home-text-container {
+  flex: 2;
+  padding: 0 20px; /* Padding between image and text */
+  text-align: center; /* Center text horizontally */
+}
+
+.home-title {
+  font-size: 1.5em; /* Font size for titles */
+  margin-bottom: 10px;
+}
+
+.home-text {
+  font-size: 1.2em; /* Font size for text */
+  line-height: 1.5; /* Line height for readability */
+}
+
+@media (max-width: 768px) {
+  .home-container{
+    background-color: white;
+  }
+  .home-row {
+    display:contents;
+    flex-direction: column; /* Stack image on top of text */
+    align-items: center; /* Center align items */
+    padding: 0; /* Remove horizontal padding on mobile */
+  }
+  .home-image {
+    width: 220px;
+    margin-bottom: 10px;
+  }
+}

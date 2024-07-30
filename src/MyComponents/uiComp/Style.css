@@ -1,0 +1,72 @@
+/* In your CSS file, e.g., styles.css */
+.image-text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+/* styles.css or similar */
+
+.navbar {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+.navbar-brand img {
+  height: 100px;
+  background-color: white;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav {
+  margin-left: auto; /* Pushes the menu to the right */
+}
+
+  
+  @media (max-width: 992px) {
+    .hide-on-small-screens {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) {
+    .hide-on-large-screens {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    .hide-on-xlarge-screens {
+      display: none;
+    }
+    /* .container-fluid{
+      display: flex;
+      flex-direction: row-reverse;
+    } */
+    .img{
+      background-color: white;
+    }
+    .navbar-brand img {
+      height: 120px;
+    }
+    .title{
+     contain: strict;
+    }
+  }
+  @media (min-width: 400px) {
+    .hide-on-large-mobile-screens {
+      display: none;
+    }
+    
+  }
+

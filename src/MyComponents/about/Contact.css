@@ -1,0 +1,92 @@
+/* Contact.css */
+
+.contact-container {
+    
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto; /* Center align container */
+  }
+  
+    .why-works{
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .contact{
+       margin-top: 50px;
+       margin-bottom: 50px;
+    }
+
+  .contact-section {
+    /* display: inline-flex; */
+    /* display:flex; */
+    /* flex-direction: row;  */
+    margin-bottom: 30px; /* Space between sections */
+  }
+  
+  .contact-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333; /* Dark color for the title */
+  }
+
+  .main-title {
+    font-size: 2em;
+    margin-bottom: 45px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:700;
+    color: #333; /* Dark color for the title */
+  }
+  
+  .contact-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    color: #666; /* Slightly lighter color for text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 0 auto; /* Center align container */
+      }
+    
+      .why-works{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contact{
+      
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-section {
+    display:table-cell;
+    flex-direction: column; /* Stack image on top of text */
+    align-items: center; /* Center align items */
+    padding: 0; 
+      }
+
+    .contact-title {
+      font-size: 1.5em; /* Slightly smaller title on mobile */
+    }
+  
+    .contact-text {
+      font-size: 1em; /* Adjust text size on mobile */
+    }
+  }
+  

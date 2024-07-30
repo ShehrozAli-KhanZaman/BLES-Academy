@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { Home } from "./MyComponents/home/home";
+import { Jobs } from "./MyComponents/jobs/Jobs";
+import Header from "./MyComponents/uiComp/Header";
+import { Footer } from "./MyComponents/uiComp/Footer";
+import { Contact } from "./MyComponents/about/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { PrivacyPolicy } from "./MyComponents/about/PrivacyPolicy";
+import { Blogs } from "./MyComponents/blogs/Blogs";
+import { Blog } from "./MyComponents/blogs/Blog";
+import { ErrorPage } from "./MyComponents/errorPage/ErrorPage.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header title="BLES ACADEMY" searchBar={false} />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/jobs" element={<Jobs />} />
+          <Route exact path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<Blog />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

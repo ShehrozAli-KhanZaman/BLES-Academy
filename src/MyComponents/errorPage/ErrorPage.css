@@ -1,0 +1,22 @@
+/* ErrorPage.css */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .error-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    font-size: 1.5rem;
+  }
+  
