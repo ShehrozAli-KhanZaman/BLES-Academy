@@ -29,6 +29,7 @@ export const Jobs = () => {
               <h4>Skills Required:</h4>
               <ul>
                 <li>In-depth knowledge of Physics</li>
+                <li>Must have bachlor's degree in Physics</li>
                 <li>Excellent teaching skills</li>
                 <li>Ability to engage and motivate students</li>
                 <li>Strong communication skills</li>
@@ -53,6 +54,7 @@ export const Jobs = () => {
               <h4>Skills Required:</h4>
               <ul>
                 <li>In-depth knowledge of Chem/Bio</li>
+                <li>Must have bachlor's degree in Chem/Bio</li>
                 <li>Excellent teaching skills</li>
                 <li>Ability to engage and motivate students</li>
                 <li>Strong communication skills</li>
