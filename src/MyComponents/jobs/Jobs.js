@@ -4,7 +4,7 @@ import { Collapse, Button } from "react-bootstrap";
 
 export const Jobs = () => {
   const [open, setOpen] = useState(false);
-
+  const [open1, setOpen1] = useState(false);
   return (
     <div className="container-medium">
       <div className="hero-banner">
@@ -29,6 +29,30 @@ export const Jobs = () => {
               <h4>Skills Required:</h4>
               <ul>
                 <li>In-depth knowledge of Physics</li>
+                <li>Excellent teaching skills</li>
+                <li>Ability to engage and motivate students</li>
+                <li>Strong communication skills</li>
+                <li>Experience with curriculum development</li>
+              </ul>
+              <h4>Contact:</h4>
+              <p>Email: saghirahmad333@gmail.com</p>
+              <p>Phone: +923008445790</p>
+            </div>
+          </Collapse>
+
+          <Button
+            onClick={() => setOpen1(!open1)}
+            aria-controls="job-details"
+            aria-expanded={open}
+            style={{ marginLeft: 5 }}
+          >
+            Chem/Bio Teacher Required!
+          </Button>
+          <Collapse in={open1}>
+            <div id="job-details" className="mt-3">
+              <h4>Skills Required:</h4>
+              <ul>
+                <li>In-depth knowledge of Chem/Bio</li>
                 <li>Excellent teaching skills</li>
                 <li>Ability to engage and motivate students</li>
                 <li>Strong communication skills</li>
